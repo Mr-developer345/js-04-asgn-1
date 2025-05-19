@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <!-- <style>
+body{
+margin: 0;
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+transition: background-color 0.3s ease;
+}
+
+.color cont{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.color{
+width: 100px;
+height: 100px;
+cursor: pointer;    
+border-radius: 10px;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.color:hover{
+transform: scale (1.1);
+box-shadow: 0 0 10px rgba (0, 0, 0, 0.2) ;    
+}
+</style>
+<h1> pick color</h1>
+<div class="color cont">
+<div class="color" style="background-color: aqua;"        data-color="aqua">  </div>
+<div class="color" style="background-color: aquamarine;"  data-color="aquamarine"> </div>
+<div class="color" style="background-color: azure;"       data-color="azure">  </div>
+<div class="color" style="background-color: beige;"       data-color="beige"></div> 
+<div class="color"  style="background-color: bisque;"     data-color="bisque"></div>
+<div class="color" style="background-color: blueviolet;"  data-color="blueviolet"></div>
+</div>
+
+
+
+
+<script>
+
+    // select colors 
+const boxes = document.querySelectorAll('.color');
+
+// loop through each box and add a event listener
+
+boxes.forEach(box => {box.addEventListener('click', () => {
+
+const selectedcolor = box.getAttribute('data-color');
+
+document.body.style.backgroundColor = selectedcolor;
+
+
+});
+
+});
+
+</script> -->
+
+<style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .color-cont {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .color {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .color:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pick a Color</h1>
+  <div class="color-cont">
+    <div class="color" style="background-color: aqua;" data-color="aqua"></div>
+    <div class="color" style="background-color: aquamarine;" data-color="aquamarine"></div>
+    <div class="color" style="background-color: azure;" data-color="azure"></div>
+    <div class="color" style="background-color: beige;" data-color="beige"></div>
+    <div class="color" style="background-color: bisque;" data-color="bisque"></div>
+    <div class="color" style="background-color: blueviolet;" data-color="blueviolet"></div>
+  </div>
+
+  <script>
+    // Select all elements with class "color"
+    const boxes = document.querySelectorAll(".color");
+
+    // Add click event to each box
+    boxes.forEach(box => {
+      box.addEventListener('click', () => {
+        const selectedColor = box.getAttribute('data-color');
+        document.body.style.backgroundColor = selectedColor;
+      });
+    });
+  </script>
+
+<!-- how to make color picker using with html ,css and js. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
